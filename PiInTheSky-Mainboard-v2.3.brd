@@ -129,7 +129,7 @@
 <text x="4.206875" y="-15.478125" size="1.016" layer="21" font="vector" ratio="18" rot="SR0">Designed by
 Dave Akerman M0RPI
 Anthony Stirk M0UPU
-(C) 2014 V2.0</text>
+(C) 2014 V2.3</text>
 <text x="-3.88" y="-9.04875" size="1.24" layer="21" font="vector" ratio="18" rot="SR0">HTTP://PI-IN-THE-SKY.COM</text>
 <text x="16.51" y="-6.35" size="1.016" layer="21" font="vector" ratio="15">VCC</text>
 <text x="16.51" y="-3.65125" size="1.016" layer="21" font="vector" ratio="15">SDA</text>
@@ -145,6 +145,10 @@ launching and radio transmission in the air</text>
 <rectangle x1="-35.5203125" y1="-21.3121875" x2="-28.2971875" y2="-20.716875" layer="41"/>
 <text x="-6.6675" y="-12.7" size="1.016" layer="21" font="vector" ratio="15">2.8-15V</text>
 <text x="-8.5725" y="13.17625" size="0.8192" layer="21" font="vector" ratio="15" rot="R90">ADC</text>
+<circle x="2.38125" y="17.30375" radius="0.354975" width="0" layer="21"/>
+<circle x="-7.46125" y="11.1125" radius="0.354975" width="0" layer="21"/>
+<circle x="-25.4" y="-11.58875" radius="0.354975" width="0" layer="21"/>
+<circle x="-18.89125" y="-25.24125" radius="0.354975" width="0" layer="21"/>
 </plain>
 <libraries>
 <library name="Ava">
@@ -23754,14 +23758,17 @@ design rules under a new name.</description>
 </signal>
 <signal name="MCP3002/SDN">
 <contactref element="ADC" pad="1"/>
-<contactref element="U$1" pad="P$27"/>
-<wire x1="-1.11" y1="20.635" x2="-1.11" y2="21.115" width="0.254" layer="1"/>
 <wire x1="-5.55625" y1="19.3675" x2="-8.09625" y2="16.8275" width="0.254" layer="1"/>
 <wire x1="-8.09625" y1="16.8275" x2="-8.09625" y2="12.85875" width="0.254" layer="1"/>
 <wire x1="-8.09625" y1="12.85875" x2="-7.62" y2="12.3825" width="0.254" layer="1"/>
 <wire x1="-7.62" y1="12.3825" x2="-6.4262" y2="12.3825" width="0.254" layer="1"/>
-<wire x1="-5.55625" y1="19.3675" x2="-2.3775" y2="19.3675" width="0.254" layer="1"/>
-<wire x1="-2.3775" y1="19.3675" x2="-1.11" y2="20.635" width="0.254" layer="1"/>
+<contactref element="U$1" pad="P$24"/>
+<wire x1="-5.55625" y1="19.3675" x2="-5.08" y2="19.84375" width="0.254" layer="1"/>
+<wire x1="-5.08" y1="19.84375" x2="-4.92125" y2="20.0025" width="0.254" layer="1"/>
+<wire x1="-4.92125" y1="20.0025" x2="-4.92125" y2="25.4" width="0.254" layer="1"/>
+<wire x1="-4.92125" y1="25.4" x2="-5.23875" y2="25.7175" width="0.254" layer="1"/>
+<wire x1="-5.23875" y1="25.7175" x2="-6.18875" y2="25.7175" width="0.254" layer="1"/>
+<wire x1="-6.18875" y1="25.7175" x2="-6.19" y2="25.875" width="0.254" layer="1"/>
 </signal>
 <signal name="N$6">
 <contactref element="ADC" pad="2"/>
@@ -24067,9 +24074,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="DIO0.1">
 <contactref element="U$1" pad="P$22"/>
-</signal>
-<signal name="NSS1">
-<contactref element="U$1" pad="P$24"/>
 </signal>
 <signal name="DIO0.2">
 <contactref element="U$1" pad="P$28"/>

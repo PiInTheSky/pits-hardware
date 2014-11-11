@@ -5173,9 +5173,9 @@ Each DS18B20 has a unique 64-bit serial code, which allows multiple DS18B20s to 
 <label x="287.02" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="27-ID_SD"/>
-<wire x1="64.77" y1="-17.78" x2="54.61" y2="-17.78" width="0.1524" layer="91"/>
-<label x="54.61" y="-17.78" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="113.03" y1="-7.62" x2="124.46" y2="-7.62" width="0.1524" layer="91"/>
+<label x="124.46" y="-7.62" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="24-GPIO8"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -5406,13 +5406,6 @@ Each DS18B20 has a unique 64-bit serial code, which allows multiple DS18B20s to 
 <wire x1="113.03" y1="-2.54" x2="124.46" y2="-2.54" width="0.1524" layer="91"/>
 <label x="124.46" y="-2.54" size="1.27" layer="95" xref="yes"/>
 <pinref part="U$1" gate="G$1" pin="22-GPIO25"/>
-</segment>
-</net>
-<net name="NSS1" class="0">
-<segment>
-<wire x1="113.03" y1="-7.62" x2="124.46" y2="-7.62" width="0.1524" layer="91"/>
-<label x="124.46" y="-7.62" size="1.27" layer="95" xref="yes"/>
-<pinref part="U$1" gate="G$1" pin="24-GPIO8"/>
 </segment>
 </net>
 <net name="NSS2" class="0">
